@@ -1,8 +1,9 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    "./public/*.html",
-    './public/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'
+    "./*.html",
+    './public/**/*.{js}',
+    './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
     screens: {
