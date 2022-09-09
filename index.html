@@ -33,38 +33,78 @@
 </script> -->
 </head>
 
-<body class="w-screen bg-white dark:bg-darkcolor">
+<body id="body" class="w-screen z-10 transition-colors duration-300 bg-white dark:bg-darkcolor">
+  <div id="layer" class="fixed hidden z-20 h-screen w-screen bg-black"></div>
+
+  <div id="small-modal" tabindex="-1"
+    class="pt-32 justify-center fade-in transition-all -translate-y-full duration-1000 overflow-y-hidden overflow-x-hidden fixed z-50 w-full md:inset-0 h-modal md:h-full">
+
+    <div id="modal" class="z-30 relative p-4 w-full max-w-md h-full md:h-auto opacity-100">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex justify-between items-center p-5 rounded-t border-b dark:border-gray-600">
+          <h3 class="text-xl font-medium text-gray-900 dark:text-white">
+            Aviso del desarrollador
+          </h3>
+          <button type="button" id="close-modal"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-toggle="medium-modal">
+            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-6 space-y-6">
+          <p class="text-base leading-relaxed text-gray-600 dark:text-gray-400">
+            Este sitio web lo he diseñado para practicar mis habilidades de programación y diseño, no tiene fines
+            comerciales en absoluto.
+          </p>
+          <p class="text-base leading-relaxed text-gray-600 dark:text-gray-400">
+            Este sitio web fue inspirado en el sitio web <span class="font-bold">saveafox.org</span>
+            Mi intención fue simular un rediseño del sitio web mencionado para practicar
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
   <header
     class="z-100 relative m-auto h-[650px] max-w-[1550px] bg-heroImg-mobile bg-[length:900px] bg-center bg-no-repeat tablet:bg-[length:1000px] laptop:h-[750px] laptop:bg-heroImg laptop:bg-[length:1600px] laptop:bg-center laptop:px-0">
     <nav
-      class="relative z-10 bg-white flex items-center justify-between w-full h-24 px-8 transition-colors dark:bg-darkcolor">
-      <img class="z-10 w-40 mr-0 dark:hidden tablet:mr-5 tablet:w-48" src="/public/assets/img/logo.svg" alt="" />
-      <img class="z-10 hidden w-40 mr-0 dark:block tablet:mr-5 tablet:w-48" src="/public/assets/img/logo_dark.svg"
-        alt="" />
+      class="relative z-10 bg-white flex items-center justify-between w-full h-24 px-8 transition-colors duration-300 dark:bg-darkcolor">
+      <span class="font-bold text-4xl text-darkcolor dark:text-white transition-colors duration-300 ">SAVE A <span
+          class="text-amber-500">FOX</span></span>
       <!-- MENU DESKTOP TABLET -->
       <div
-        class="fixed top-0 right-0 z-0 flex flex-col bg-white h-full transition-colors translate-x-full w-72 dark:bg-darkcolor laptop:relative laptop:top-auto laptop:right-auto laptop:h-auto laptop:w-auto laptop:translate-x-0 laptop:flex-row"
+        class="fixed top-0 right-0 z-0 flex flex-col bg-white h-full transition-all duration-300 translate-x-full w-72 dark:bg-darkcolor laptop:relative laptop:top-auto laptop:right-auto laptop:h-auto laptop:w-auto laptop:translate-x-0 laptop:flex-row"
         id="nav">
         <ul
           class="flex flex-col items-start justify-between gap-10 pt-16 pl-8 mt-24 mr-10 font-normal text-gray-700 transition-colors dark:text-gray-300 laptop:mt-0 laptop:flex-row laptop:items-center laptop:pt-0">
           <li class="w-full laptop:w-auto">
-            <a class="transition-colors hover:text-amber-500" href="">Home</a>
+            <a class="transition-colors duration-300 hover:text-amber-500" href="">Home</a>
             <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
-            <a class="transition-colors hover:text-amber-500" href="">About</a>
+            <a class="transition-colors duration-300 hover:text-amber-500" href="">About</a>
             <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
-            <a class="transition-colors hover:text-amber-500" href="">Our team</a>
+            <a class="transition-colors duration-300 hover:text-amber-500" href="">Our team</a>
             <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
-            <a class="transition-colors hover:text-amber-500" href="">Sponsor</a>
+            <a class="transition-colors duration-300 hover:text-amber-500" href="">Sponsor</a>
             <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
-            <a class="transition-colors hover:text-amber-500" href="">Shop</a>
+            <a class="transition-colors duration-300 hover:text-amber-500" href="">Shop</a>
             <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
@@ -72,9 +112,9 @@
           </li>
         </ul>
         <!-- BUTTON DARKMODE DESKTOP -->
-        <div class="items-center hidden div laptop:flex">
+        <div class="items-center hidden laptop:flex">
           <button type="button" id="toggle"
-            class="flex justify-center p-2 text-gray-700 transition bg-gray-100 border border-transparent rounded-md ease-in-out hover:bg-gray-200 hover:text-gray-700 dark:bg-gray-900 dark:text-amber-400 dark:hover:bg-gray-800">
+            class="flex justify-center p-2 text-amber-500 transition-colors duration-300 bg-gray-100 border border-transparent rounded-md hover:bg-gray-200 hover:text-amber-500 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="sunIcon"
               class="w-5 h-5">
               <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2
@@ -116,8 +156,8 @@
       <div class="flex items-center justify-between gap-6 laptop:hidden">
         <div class="div">
           <button type="button" id="toggle2"
-            class="flex justify-center p-2 text-gray-700 transition bg-gray-100 border border-transparent rounded-md ease-in-out hover:bg-gray-200 hover:text-gray-700 dark:bg-gray-900 dark:text-amber-400 dark:hover:bg-gray-800">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="sunIcon"
+            class="flex justify-center p-2 text-amber-500 transition-colors duration-300 bg-gray-100 border border-transparent rounded-md hover:bg-gray-200 hover:text-amber-500 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="sunIcon2"
               class="w-5 h-5">
               <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2
                   0V3a1 1 0 011-1zm4 8a4 4 0
@@ -130,7 +170,7 @@
                   8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414
                   1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="moonIcon"
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="moonIcon2"
               class="hidden w-5 h-5 transform -rotate-90">
               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0
                   1010.586
@@ -138,7 +178,8 @@
             </svg>
           </button>
         </div>
-        <div class="tham-e-squeeze tham tham-w-6 hover:opacity-100 laptop:hidden" id="btnNav">
+        <div class="tham-e-squeeze transition-all duration-300 tham tham-w-6 hover:opacity-100 laptop:hidden"
+          id="btnNav">
           <div class="tham-box">
             <div class="tham-inner bg-midnight dark:bg-gray-300" />
           </div>
@@ -148,17 +189,18 @@
     <section class="flex flex-col gap-6 px-8 pt-16 pb-32 tablet:pt-32 laptop:pt-32 laptop:pb-0">
       <div class="flex flex-col w-full gap-6 tablet:w-full laptop:w-5/12 desktop:w-5/12">
         <h1
-          class="text-5xl font-bold text-white dark:text-white laptop:text-6xl laptop:font-extrabold laptop:text-midnight">
+          class="text-5xl font-bold transition-colors duration-300 text-white dark:text-white laptop:text-6xl laptop:font-extrabold laptop:text-midnight">
           You Can Help to
           <span class="text-white laptop:text-amber-500"> Save a Fox</span>
         </h1>
         <div class="p-0 m-0 w-fit">
-          <p class="text-base font-normal tracking-widest text-white dark:text-white laptop:text-midnight-light">
+          <p
+            class="text-base font-normal tracking-widest text-white dark:text-white transition-colors duration-300 laptop:text-midnight-light">
             MESSAGE FROM <span class="font-medium">SAM LEAN</span> FOUNDER
           </p>
           <hr class="border-2 border-amber-400 bg-amber-400" />
         </div>
-        <p class="text-base text-white dark:text-white laptop:text-midnight-light">
+        <p class="text-base transition-colors duration-300  text-white dark:text-white laptop:text-midnight-light">
           We are a non-profit organization faithfully dedicated to rescuing
           foxes by providing them with a safe haven and giving them the
           necessary care so as not to endanger the species and to adapt them
@@ -167,21 +209,22 @@
       </div>
       <div class="flex flex-row gap-5">
         <a class="btn-fill" href="">Join Our Team</a>
-        <a class="text-white border-white btn-box laptop:border-midnight laptop:text-midnight" href="">Donate</a>
+        <a class="text-white transition-colors duration-300 border-white btn-box laptop:border-midnight laptop:text-midnight"
+          href="">Donate</a>
       </div>
     </section>
   </header>
   <section class="flex items-center justify-center tablet:pt-8">
     <div
-      class="flex flex-col justify-center px-8 transition-none divide-y-2 divide-gray-200 divide-inherit dark:divide-gray-800 tablet:flex-row tablet:flex-wrap tablet:justify-center tablet:gap-y-6 tablet:gap-x-6 tablet:divide-y-0 laptop:flex-row laptop:gap-x-0 laptop:divide-y-0 laptop:divide-x-2">
+      class="flex flex-col divide-gray-200 justify-center px-8 divide-y-2 dark:divide-gray-800 tablet:flex-row tablet:flex-wrap tablet:justify-center tablet:gap-y-6 tablet:gap-x-6 tablet:divide-y-0 laptop:flex-row laptop:gap-x-0 laptop:divide-y-0 laptop:divide-x-2">
       <div class="flex justify-between h-24 w-60 laptop:px-8 desktop:w-auto">
         <div class="flex items-center gap-6 tablet:flex-row">
           <div
-            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors border-2 rounded-full 200border-gray-200 dark:border-gray-800">
+            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-gray-800">
             <img loading="lazy" class="w-8 p-0 m-0 text-midnight" src="/public/assets/icons/heart.png"
               alt="icon light mode" />
           </div>
-          <div class="dark:text-gray-300 tablet:text-center desktop:text-left">
+          <div class="dark:text-gray-300 tablet:text-center desktop:text-left transition-colors duration-300">
             <p class="text-xl font-bold">900+</p>
             <p class="text-base">Foxes Rescued</p>
           </div>
@@ -190,11 +233,11 @@
       <div class="flex justify-between h-24 w-60 laptop:px-8 desktop:w-auto">
         <div class="flex items-center gap-6 tablet:flex-row">
           <div
-            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors border-2 rounded-full 200border-gray-200 dark:border-gray-800">
+            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-gray-800">
             <img loading="lazy" class="w-8 p-0 m-0 text-midnight" src="/public/assets/icons/pin.png"
               alt="icon light mode" />
           </div>
-          <div class="dark:text-gray-300 tablet:text-center desktop:text-left">
+          <div class="dark:text-gray-300 tablet:text-center desktop:text-left transition-colors duration-300">
             <p class="text-xl font-bold">160+</p>
             <p class="text-base">Different Locations</p>
           </div>
@@ -203,11 +246,11 @@
       <div class="flex justify-between h-24 w-60 laptop:px-8 desktop:w-auto">
         <div class="flex items-center gap-6 tablet:flex-row">
           <div
-            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors border-2 rounded-full 200border-gray-200 dark:border-gray-800">
+            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-gray-800">
             <img loading="lazy" class="w-8 p-0 m-0 text-midnight" src="/public/assets/icons/user.png"
               alt="icon light mode" />
           </div>
-          <div class="dark:text-gray-300 tablet:text-center desktop:text-left">
+          <div class="dark:text-gray-300 tablet:text-center desktop:text-left transition-colors duration-300">
             <p class="text-xl font-bold">30+</p>
             <p class="text-base">Our Team Members</p>
           </div>
@@ -216,11 +259,11 @@
       <div class="flex justify-between h-24 w-60 laptop:px-8 desktop:w-auto">
         <div class="flex items-center gap-6 tablet:flex-row">
           <div
-            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors border-2 rounded-full 200border-gray-200 dark:border-gray-800">
+            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-gray-800">
             <img loading="lazy" class="w-8 p-0 m-0 text-midnight" src="/public/assets/icons/ribbon.png"
               alt="icon light mode" />
           </div>
-          <div class="dark:text-gray-300 tablet:text-center desktop:text-left">
+          <div class="dark:text-gray-300 tablet:text-center desktop:text-left transition-colors duration-300">
             <p class="text-xl font-bold">15+</p>
             <p class="text-base">Years of experience</p>
           </div>
