@@ -2,8 +2,9 @@ module.exports = {
   darkMode: 'class',
   content: [
     "./*.html",
-    './public/**/*.{js}',
-    './node_modules/tw-elements/dist/js/**/*.js'
+    './public/**/*.js',
+    './node_modules/tw-elements/dist/js/**/*.js',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     screens: {
