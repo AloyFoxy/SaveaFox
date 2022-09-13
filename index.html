@@ -34,80 +34,41 @@
 </head>
 
 <body id="body" class="w-screen z-10 transition-colors duration-300 bg-white dark:bg-darkcolor">
-  <div id="layer" class="fixed hidden z-20 h-screen w-screen bg-black"></div>
-
-  <div id="small-modal" tabindex="-1"
-    class="pt-32 justify-center fade-in transition-all -translate-y-full duration-1000 overflow-y-hidden overflow-x-hidden fixed z-50 w-full md:inset-0 h-modal md:h-full">
-
-    <div id="modal" class="z-30 relative p-4 w-full max-w-md h-full md:h-auto opacity-100">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-        <!-- Modal header -->
-        <div class="flex justify-between items-center p-5 rounded-t border-b dark:border-gray-600">
-          <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-            Aviso del desarrollador
-          </h3>
-          <button type="button" id="close-modal"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-toggle="medium-modal">
-            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
-        </div>
-        <!-- Modal body -->
-        <div class="p-6 space-y-6">
-          <p class="text-base leading-relaxed text-gray-600 dark:text-gray-400">
-            Este sitio web lo he diseñado para practicar mis habilidades de programación y diseño, no tiene fines
-            comerciales.
-            <br>
-            Mi intención fue simular un rediseño del sitio web mencionado para practicar mis habilidades.
-          </p>
-          <p class="text-base leading-relaxed text-gray-600 dark:text-gray-400">
-            Este sitio web fue inspirado en el sitio web de <a href="https://www.saveafox.org" target="_blank"
-              class="font-bold hover:text-amber-500 transition-colors">saveafox.org</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
   <header
     class="z-100 relative m-auto h-[650px] max-w-[1550px] bg-heroImg-mobile bg-[length:900px] bg-center bg-no-repeat tablet:bg-[length:1000px] laptop:h-[750px] laptop:bg-heroImg laptop:bg-[length:1600px] laptop:bg-center laptop:px-0">
     <nav
-      class="relative z-10 bg-white flex items-center justify-between w-full h-24 px-8 transition-colors duration-300 dark:bg-darkcolor">
-      <span class="font-bold text-4xl text-darkcolor dark:text-white transition-colors duration-300 ">SAVE A <span
-          class="text-amber-500">FOX</span></span>
+      class="relative z-10 bg-white flex items-center justify-between w-full h-24 px-8 desktop-lg:px-0 transition-colors duration-300 dark:bg-darkcolor">
+      <figure class="w-48 h-auto dark:hidden transition-all duration-300 desktop:w-64">
+        <img class="w-full h-auto object-cover" src="/public/assets/img/logo-inline.webp" alt="">
+      </figure>
+      <figure class="w-48 h-auto hidden dark:block transition-all duration-300 desktop:w-64">
+        <img class="w-full h-auto object-cover" src="/public/assets/img/logo-inlineDark.webp" alt="">
+      </figure>
       <!-- MENU DESKTOP TABLET -->
       <div
         class="fixed top-0 right-0 z-0 flex flex-col bg-white h-full transition-all duration-300 translate-x-full w-72 dark:bg-darkcolor laptop:relative laptop:top-auto laptop:right-auto laptop:h-auto laptop:w-auto laptop:translate-x-0 laptop:flex-row"
         id="nav">
         <ul
-          class="flex flex-col items-start justify-between gap-10 pt-16 pl-8 mt-24 mr-10 font-normal text-gray-700 transition-colors dark:text-gray-300 laptop:mt-0 laptop:flex-row laptop:items-center laptop:pt-0">
+          class="flex flex-col items-start justify-between gap-10 pt-16 pl-8 mt-24 mr-10 font-normal text-foxBrown transition-colors dark:text-gray-300 laptop:mt-0 laptop:flex-row laptop:items-center laptop:pt-0">
           <li class="w-full laptop:w-auto">
             <a class="transition-colors duration-300 hover:text-amber-500" href="">Home</a>
-            <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
+            <hr class="border-gray-300 border-1 dark:border-foxBrown dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
             <a class="transition-colors duration-300 hover:text-amber-500" href="">About</a>
-            <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
+            <hr class="border-gray-300 border-1 dark:border-foxBrown dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
             <a class="transition-colors duration-300 hover:text-amber-500" href="">Our team</a>
-            <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
+            <hr class="border-gray-300 border-1 dark:border-foxBrown dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
             <a class="transition-colors duration-300 hover:text-amber-500" href="">Sponsor</a>
-            <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
+            <hr class="border-gray-300 border-1 dark:border-foxBrown dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
             <a class="transition-colors duration-300 hover:text-amber-500" href="">Shop</a>
-            <hr class="border-gray-300 border-1 dark:border-gray-800 dark:bg-gray-800 laptop:hidden" />
+            <hr class="border-gray-300 border-1 dark:border-foxBrown dark:bg-gray-800 laptop:hidden" />
           </li>
           <li class="w-full laptop:w-auto">
             <a class="btn-fill" href="">Contact</a>
@@ -116,7 +77,7 @@
         <!-- BUTTON DARKMODE DESKTOP -->
         <div class="items-center hidden laptop:flex">
           <button type="button" id="toggle"
-            class="flex justify-center p-2 text-amber-500 transition-colors duration-300 bg-gray-100 border border-transparent rounded-md hover:bg-gray-200 hover:text-amber-500 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800">
+            class="flex justify-center p-2 text-amber-500 transition-colors duration-300 bg-gray-100 border border-transparent rounded-md hover:bg-gray-200 hover:text-amber-500 dark:bg-darkcolor-light dark:text-white dark:hover:bg-foxBrown">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="sunIcon"
               class="w-5 h-5">
               <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2
@@ -137,28 +98,13 @@
                   10.586z"></path>
             </svg>
           </button>
-          <!-- <button type="button" id="toggle"
-            class="flex justify-center p-2 text-gray-500 transition bg-gray-100 border border-transparent rounded-md ease-in-o200ut lg:bg-white lg:dark:bg-gray-900 hover:bg-gray-50 hover:text-gray-700 active:bg-gray-50 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2
-                  0V3a1 1 0 011-1zm4 8a4 4 0
-                  11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0
-                  001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1
-                  0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0
-                  011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011
-                  1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465
-                  5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414
-                  8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414
-                  1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
-            </svg>
-          </button> -->
         </div>
       </div>
       <!-- MENU MOBILE AND BUTTON DARKMODE -->
-      <div class="flex items-center justify-between gap-6 laptop:hidden">
+      <div class="flex items-center justify-between gap-6 z-10 laptop:hidden">
         <div class="div">
           <button type="button" id="toggle2"
-            class="flex justify-center p-2 text-amber-500 transition-colors duration-300 bg-gray-100 border border-transparent rounded-md hover:bg-gray-200 hover:text-amber-500 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800">
+            class="flex justify-center p-2 text-amber-500 transition-colors duration-300 bg-gray-100 border border-transparent rounded-md hover:bg-gray-200 hover:text-amber-500 dark:bg-darkcolor-light dark:text-white dark:hover:bg-foxBrown">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="sunIcon2"
               class="w-5 h-5">
               <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2
@@ -176,33 +122,34 @@
               class="hidden w-5 h-5 transform -rotate-90">
               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0
                   1010.586
-                  10.586z"></path>
+                  10.586z">
+              </path>
             </svg>
           </button>
         </div>
         <div class="tham-e-squeeze transition-all duration-300 tham tham-w-6 hover:opacity-100 laptop:hidden"
           id="btnNav">
           <div class="tham-box">
-            <div class="tham-inner bg-midnight dark:bg-gray-300" />
+            <div class="tham-inner bg-foxBrown dark:bg-gray-300" />
           </div>
         </div>
       </div>
     </nav>
-    <section class="flex flex-col gap-6 px-8 pt-16 pb-32 tablet:pt-32 laptop:pt-32 laptop:pb-0">
+    <section class="flex flex-col gap-6 px-8 pt-16 pb-32 tablet:pt-32 laptop:pt-32 laptop:pb-0 desktop-lg:px-0">
       <div class="flex flex-col w-full gap-6 tablet:w-full laptop:w-5/12 desktop:w-5/12">
         <h1
-          class="text-5xl font-bold transition-colors duration-300 text-white dark:text-white laptop:text-6xl laptop:font-extrabold laptop:text-midnight">
+          class="text-5xl font-bold transition-colors duration-300 text-white dark:text-white laptop:text-6xl laptop:font-extrabold laptop:text-foxBrown">
           You Can Help to
           <span class="text-white laptop:text-amber-500"> Save a Fox</span>
         </h1>
         <div class="p-0 m-0 w-fit">
           <p
-            class="text-base font-normal tracking-widest text-white dark:text-white transition-colors duration-300 laptop:text-midnight-light">
+            class="text-base font-normal tracking-widest text-white dark:text-white transition-colors duration-300 laptop:text-foxBrown">
             MESSAGE FROM <span class="font-medium">SAM LEAN</span> FOUNDER
           </p>
           <hr class="border-2 border-amber-400 bg-amber-400" />
         </div>
-        <p class="text-base transition-colors duration-300  text-white dark:text-white laptop:text-midnight-light">
+        <p class="text-base transition-colors duration-300  text-white dark:text-white laptop:text-foxBrown">
           We are a non-profit organization faithfully dedicated to rescuing
           foxes by providing them with a safe haven and giving them the
           necessary care so as not to endanger the species and to adapt them
@@ -211,20 +158,19 @@
       </div>
       <div class="flex flex-row gap-5">
         <a class="btn-fill" href="">Join Our Team</a>
-        <a class="text-white transition-colors duration-300 border-white btn-box laptop:border-midnight laptop:text-midnight"
+        <a class="text-white transition-colors duration-300 border-white btn-box laptop:border-foxBrown laptop:text-foxBrown"
           href="">Donate</a>
       </div>
     </section>
   </header>
-  <section class="flex items-center justify-center tablet:pt-8">
+  <section class="flex items-center justify-center tablet:pt-8 ">
     <div
-      class="flex flex-col divide-gray-200 justify-center px-8 divide-y-2 dark:divide-gray-800 tablet:flex-row tablet:flex-wrap tablet:justify-center tablet:gap-y-6 tablet:gap-x-6 tablet:divide-y-0 laptop:flex-row laptop:gap-x-0 laptop:divide-y-0 laptop:divide-x-2">
+      class="flex flex-col divide-gray-200 justify-center px-8 divide-y-2 dark:divide-foxBrown dark:divide-opacity-90 tablet:flex-row tablet:flex-wrap tablet:justify-center tablet:gap-y-6 tablet:gap-x-6 tablet:divide-y-0 laptop:flex-row laptop:gap-x-0 laptop:divide-y-0 laptop:divide-x-2 text-foxBrown">
       <div class="flex justify-between h-24 w-60 laptop:px-8 desktop:w-auto">
         <div class="flex items-center gap-6 tablet:flex-row">
           <div
-            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-gray-800">
-            <img loading="lazy" class="w-8 p-0 m-0 text-midnight" src="/public/assets/icons/heart.png"
-              alt="icon light mode" />
+            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-foxBrown dark:border-opacity-90">
+            <img loading="lazy" class="w-8 p-0 m-0" src="/public/assets/icons/heart.png" alt="icon light mode" />
           </div>
           <div class="dark:text-gray-300 tablet:text-center desktop:text-left transition-colors duration-300">
             <p class="text-xl font-bold">900+</p>
@@ -235,9 +181,8 @@
       <div class="flex justify-between h-24 w-60 laptop:px-8 desktop:w-auto">
         <div class="flex items-center gap-6 tablet:flex-row">
           <div
-            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-gray-800">
-            <img loading="lazy" class="w-8 p-0 m-0 text-midnight" src="/public/assets/icons/pin.png"
-              alt="icon light mode" />
+            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-foxBrown dark:border-opacity-90">
+            <img loading="lazy" class="w-8 p-0 m-0" src="/public/assets/icons/pin.png" alt="icon light mode" />
           </div>
           <div class="dark:text-gray-300 tablet:text-center desktop:text-left transition-colors duration-300">
             <p class="text-xl font-bold">160+</p>
@@ -248,9 +193,8 @@
       <div class="flex justify-between h-24 w-60 laptop:px-8 desktop:w-auto">
         <div class="flex items-center gap-6 tablet:flex-row">
           <div
-            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-gray-800">
-            <img loading="lazy" class="w-8 p-0 m-0 text-midnight" src="/public/assets/icons/user.png"
-              alt="icon light mode" />
+            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-foxBrown dark:border-opacity-90">
+            <img loading="lazy" class="w-8 p-0 m-0" src="/public/assets/icons/user.png" alt="icon light mode" />
           </div>
           <div class="dark:text-gray-300 tablet:text-center desktop:text-left transition-colors duration-300">
             <p class="text-xl font-bold">30+</p>
@@ -261,9 +205,8 @@
       <div class="flex justify-between h-24 w-60 laptop:px-8 desktop:w-auto">
         <div class="flex items-center gap-6 tablet:flex-row">
           <div
-            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-gray-800">
-            <img loading="lazy" class="w-8 p-0 m-0 text-midnight" src="/public/assets/icons/ribbon.png"
-              alt="icon light mode" />
+            class="flex items-center justify-center flex-grow-0 flex-shrink-0 w-16 h-16 transition-colors duration-300 border-2 rounded-full border-gray-200 dark:border-foxBrown dark:border-opacity-90">
+            <img loading="lazy" class="w-8 p-0 m-0" src="/public/assets/icons/ribbon.png" alt="icon light mode" />
           </div>
           <div class="dark:text-gray-300 tablet:text-center desktop:text-left transition-colors duration-300">
             <p class="text-xl font-bold">15+</p>
@@ -274,7 +217,7 @@
     </div>
   </section>
   <main class="m-auto max-w-screen">
-    <section class="m-auto mt-8 max-w-[1550px] px-8 laptop:px-8 desktop:px-0">
+    <section class="m-auto mt-8 max-w-[1550px] px-8 laptop:px-8">
       <div class="pt-8">
         <div class="pb-12 text-center">
           <h2 class="text-h2 laptop:text-h2 dark:text-gray-300">
@@ -288,7 +231,7 @@
                 We rescue foxes from fur farms and elsewhere.
               </h3>
             </div>
-            <p class="text-base text-center text-midnight-light dark:text-gray-300 laptop:text-left">
+            <p class="text-base text-center text-foxBrown dark:text-gray-300 laptop:text-left">
               The purpose of this website is not for profit of any kind. It is
               to educate people on the suffering of an animal that is
               perpetuated by the fur trade. Join with in helping save these
@@ -309,7 +252,7 @@
       <div class="m-auto mt-12 max-w-[1550px] pt-14">
         <div class="pb-8 text-center">
           <h2 class="text-h2 dark:text-gray-300">Our rescue process</h2>
-          <p class="pt-8 text-base text-p dark:text-gray-300">
+          <p class="pt-8 text-base text-p dark:text-gray-300 text-foxBrown">
             Let's choose the package that is best for you and explora it
             happily and cheerfully.
           </p>
@@ -324,7 +267,7 @@
             <p class="pt-2 text-xl font-medium text-amber-500">
               Preparation and care of fox cubs
             </p>
-            <p class="pt-4 text-base text-midnight-light dark:text-gray-300">
+            <p class="pt-4 text-base text-foxBrown dark:text-gray-300">
               We prepare for fox cubs by having all the necessary supplies
               such as medicine, feeding syringes, teats and blankets. When we
               rescue foxes older than 7 weeks, we need ample space and regular
@@ -347,7 +290,7 @@
             <p class="pt-2 text-xl font-medium text-amber-500">
               Rescuing and helping
             </p>
-            <p class="pt-4 text-base text-midnight-light dark:text-gray-300">
+            <p class="pt-4 text-base text-foxBrown dark:text-gray-300">
               We rescue foxes from many different situations. We rescue sick,
               injured, and orphaned foxes from furfarms. Ones that the farmers
               believe would not make it. We take in surrendered foxes that
@@ -370,7 +313,7 @@
             <p class="pt-2 text-xl font-medium text-amber-500">
               Love and affection
             </p>
-            <p class="pt-4 pb-4 text-base text-midnight-light dark:text-gray-300">
+            <p class="pt-4 pb-4 text-base text-foxBrown dark:text-gray-300">
               The foxes we rescue need love to thrive. Without love, they grow
               wild and unmanageable, they are animals that need a lot of
               attention to be given love and play, not everyone is suited to
@@ -396,7 +339,7 @@
             <p class="pt-2 text-xl font-medium text-amber-500">
               Adopt and find a home
             </p>
-            <p class="pt-4 text-base text-midnight-light dark:text-gray-300">
+            <p class="pt-4 text-base text-foxBrown dark:text-gray-300">
               Our goal is to give all the foxes we rescue up for adoption.
               Some foxes I rescue tend to be more feral by nature; Those are
               the foxes I would choose not to adopt. But we do our best to
@@ -412,7 +355,7 @@
       <div class="m-auto max-w-[1550px] px-8 pt-28 pb-28">
         <div class="pb-8 text-center">
           <h2 class="text-h2 dark:text-gray-300">How you can help?</h2>
-          <p class="px-4 pt-8 text-base text-p dark:text-gray-300">
+          <p class="px-4 pt-8 text-base text-p dark:text-gray-300 text-foxBrown">
             I'm very thankful for each and every person that has given to
             SaveAFox cause. Below are the three ways you can help rescue foxes
             from fur farms.
@@ -420,36 +363,36 @@
         </div>
         <div class="flex flex-col items-center content-between h-auto gap-6 laptop:flex-row desktop:justify-center">
           <div
-            class="flex flex-col items-center gap-4 px-10 py-10 transition bg-white rounded-xl hover:shadow-lg hover:shadow-gray-200 dark:bg-gray-900 dark:hover:shadow-black tablet:w-96">
+            class="flex flex-col h-auto items-center gap-4 px-10 py-10 transition bg-white rounded-xl hover:shadow-lg hover:shadow-gray-200 dark:bg-darkcolor-light dark:bg-opacity-30 dark:hover:shadow-black tablet:w-96 tablet:h-auto tablet:max-h-[30rem]">
             <img class="w-16" src="/public/assets/icons/heart.webp" alt="icon heart" />
-            <h3 class="text-2xl font-bold uppercase text-midnight dark:text-gray-300">
+            <h3 class="text-2xl font-bold uppercase text-foxBrown dark:text-gray-300">
               Donate
             </h3>
-            <p class="text-base text-center text-midnight-light dark:text-gray-300">
-              Donate to help fund the sanctuary so we can continue to keep up
-              with the foxes care and needs.
+            <p class="text-base text-center text-foxBrown dark:text-gray-300">
+              You can make a donation to show your love for the foxes and our work by helping to fund the sanctuary so
+              that we can continue the care and needs of the foxes.
             </p>
           </div>
           <div
-            class="flex flex-col items-center gap-4 px-10 py-10 transition bg-white rounded-xl hover:shadow-lg hover:shadow-gray-200 dark:bg-gray-900 dark:hover:shadow-black tablet:w-96">
+            class="flex flex-col h-auto items-center gap-4 px-10 py-10 transition bg-white rounded-xl hover:shadow-lg hover:shadow-gray-200 dark:bg-darkcolor-light dark:bg-opacity-30 dark:hover:shadow-black tablet:w-96 tablet:h-auto tablet:max-h-[30rem]">
             <img class="w-16" src="/public/assets/icons/diamond.svg" alt="icon diamons" />
-            <h3 class="text-2xl font-bold uppercase text-midnight dark:text-gray-300">
+            <h3 class="text-2xl font-bold uppercase text-foxBrown dark:text-gray-300">
               Sponsor
             </h3>
-            <p class="text-base text-center text-midnight-light dark:text-gray-300">
-              Donate to help fund the sanctuary so we can continue to keep up
-              with the foxes care and needs.
+            <p class="text-base text-center text-foxBrown dark:text-gray-300">
+              You can show us your support and love for foxes by contributing to improve our facilities and making our
+              work easier and more efficient to save and shelter more foxes.
             </p>
           </div>
           <div
-            class="flex flex-col items-center gap-4 px-10 py-10 transition bg-white rounded-xl hover:shadow-lg hover:shadow-gray-200 dark:bg-gray-900 dark:hover:shadow-black tablet:w-96">
-            <img class="w-16" src="/public/assets/icons/house.webp" alt="icon house" />
-            <h3 class="text-2xl font-bold uppercase text-midnight dark:text-gray-300">
+            class="flex flex-col h-auto items-center gap-4 px-10 py-10 transition bg-white rounded-xl hover:shadow-lg hover:shadow-gray-200 dark:bg-darkcolor-light dark:bg-opacity-30 dark:hover:shadow-black tablet:w-96 tablet:h-auto tablet:max-h-[30rem]">
+            <img class="w-14" src="/public/assets/icons/house.webp" alt="icon house" />
+            <h3 class="text-2xl font-bold uppercase text-foxBrown dark:text-gray-300">
               Adopt
             </h3>
-            <p class="text-base text-center text-midnight-light dark:text-gray-300">
-              Donate to help fund the sanctuary so we can continue to keep up
-              with the foxes care and needs.
+            <p class="text-base text-center text-foxBrown dark:text-gray-300">
+              Adopting is one of the best ways to take care of a fox, you can adopt the one you want as long as you are
+              able and have the ideal space for the little ball of fur to live healthy and comfortably.
             </p>
           </div>
         </div>
@@ -460,7 +403,7 @@
         <div class="flex flex-col items-center gap-10 text-center desktop:px-32">
           <img class="w-16" src="/public/assets/icons/shield.webp" alt="" />
           <h2 class="text-h2 dark:text-gray-300">Fight to save a fox</h2>
-          <p class="text-base text-center text-midnight-light dark:text-gray-300">
+          <p class="text-base text-center text-foxBrown dark:text-gray-300">
             Foxes are suffering at fur farms. But you can help! I encourage
             you to take a look at the pictures of what it is like for a fox at
             the fur farm. By making a donation you can help the already
@@ -468,7 +411,7 @@
             with all the food, medical expenses, and housing for these foxes.
             Or YOU can rescue your own fur farm fox by adopting or sponsoring.
           </p>
-          <p class="text-base text-center text-midnight-light dark:text-gray-300">
+          <p class="text-base text-center text-foxBrown dark:text-gray-300">
             Although fur farms are not illegal in the USA you can still help
             bring an end to the fur industry simply by not buying fur.
             Eighty-five percent of fur available for purchase comes from the
@@ -485,10 +428,14 @@
     <footer class="bg-white max-w-screen dark:bg-darkcolor">
       <div
         class="m-auto flex max-w-[1550px] flex-col items-center py-16 px-8 laptop:flex-row laptop:items-start laptop:justify-center laptop:gap-8">
-        <div class="flex flex-col items-center w-full pb-8 laptop:w-1/3">
-          <img class="pb-6 dark:hidden" src="/public/assets/img/logo.svg" alt="" />
-          <img class="hidden pb-6 dark:block" src="/public/assets/img/logo_dark.svg" alt="" />
-          <p class="w-full text-base text-center text-midnight-light dark:text-gray-300">
+        <div class="flex flex-col items-start w-full pb-8 laptop:w-1/3">
+          <figure class="dark:hidden">
+            <img class="pb-6 w-80 h-auto" src="/public/assets/img/logo-inline.webp" alt="" />
+          </figure>
+          <figure class="hidden dark:block">
+            <img class="pb-6 w-80 h-auto" src="/public/assets/img/logo-inlineDark.webp" alt="logo footer" />
+          </figure>
+          <p class="w-full text-base text-left text-foxBrown dark:text-gray-300">
             We are a non-profit organization faithfully dedicated to rescuing
             foxes by providing them with a safe haven and giving them the
             necessary care so as not to endanger the species and to adapt them
@@ -496,8 +443,8 @@
           </p>
         </div>
         <div class="flex flex-wrap justify-between w-full gap-y-8 laptop:w-auto laptop:gap-x-8">
-          <div class="flex flex-col gap-3 dark:text-gray-300">
-            <h4 class="pb-1 text-lg font-bold text-midnight dark:text-gray-300">
+          <div class="flex flex-col gap-3 text-foxBrown dark:text-gray-300">
+            <h4 class="pb-1 text-lg font-bold text-foxBrown dark:text-gray-300">
               About us
             </h4>
             <a class="text-base" href="#">Objetive</a>
@@ -507,8 +454,8 @@
             <a class="text-base" href="#">Countries</a>
             <a class="text-base" href="#">Sanctuary</a>
           </div>
-          <div class="flex flex-col gap-3 dark:text-gray-300">
-            <h4 class="pb-1 text-lg font-bold text-midnight dark:text-gray-300">
+          <div class="flex flex-col gap-3 text-foxBrown dark:text-gray-300">
+            <h4 class="pb-1 text-lg font-bold text-foxBrown dark:text-gray-300">
               Useful Links
             </h4>
             <a class="text-base" href="#">Tours</a>
@@ -518,8 +465,8 @@
             <a class="text-base" href="#">Foxes at fur farms</a>
             <a class="text-base" href="#">Fox & mink care</a>
           </div>
-          <div class="flex flex-col gap-3 dark:text-gray-300">
-            <h4 class="pb-1 text-lg font-bold text-midnight dark:text-gray-300">
+          <div class="flex flex-col gap-3 text-foxBrown dark:text-gray-300">
+            <h4 class="pb-1 text-lg font-bold text-foxBrown dark:text-gray-300">
               Tour
             </h4>
             <a class="text-base" href="#">Seasons</a>
@@ -529,8 +476,8 @@
             <a class="text-base" href="#">Princing</a>
             <a class="text-base" href="#">Cautions</a>
           </div>
-          <div class="flex flex-col gap-3 dark:text-gray-300">
-            <h4 class="pb-1 text-lg font-bold text-midnight dark:text-gray-300">
+          <div class="flex flex-col gap-3 text-foxBrown dark:text-gray-300">
+            <h4 class="pb-1 text-lg font-bold dark:text-gray-300">
               Our Sanctuary
             </h4>
             <p>Minnesota, Heart Fox St.</p>
@@ -540,25 +487,25 @@
       </div>
       <div class="m-auto flex h-auto max-w-[1550px] flex-col items-center justify-between gap-6 pb-4">
         <div class="flex flex-col justify-center order-2">
-          <p class="text-base text-gray-600 dark:text-gray-300">
-            Made by <a class="font-medium" href="https://github.com/AlloyFox"> AloyDev</a> with ❤️
+          <p class="text-base text-foxBrown dark:text-gray-300">
+            Made with ❤️ by <a class="font-medium" href="https://github.com/AlloyFox">AloyDev</a>
           </p>
         </div>
         <div class="flex flex-row items-center order-1 gap-4">
           <div
-            class="items-center justify-center flex-grow-0 flex-shrink-0 p-3 bg-white rounded-full shadow-lg dark:bg-gray-900">
+            class="items-center justify-center flex-grow-0 flex-shrink-0 p-4 bg-white rounded-full shadow-lg dark:bg-darkcolor-light">
             <img class="w-6" src="/public/assets/icons/linkedin.webp" alt="" />
           </div>
           <div
-            class="items-center justify-center flex-grow-0 flex-shrink-0 p-3 bg-white rounded-full shadow-lg dark:bg-gray-900">
+            class="items-center justify-center flex-grow-0 flex-shrink-0 p-4 bg-white rounded-full shadow-lg dark:bg-darkcolor-light">
             <img class="w-6" src="/public/assets/icons/facebook.png" alt="" />
           </div>
           <div
-            class="items-center justify-center flex-grow-0 flex-shrink-0 p-3 bg-white rounded-full shadow-lg dark:bg-gray-900">1
+            class="items-center justify-center flex-grow-0 flex-shrink-0 p-4 bg-white rounded-full shadow-lg dark:bg-darkcolor-light">
             <img class="w-6" src="/public/assets/icons/twitter.png" alt="" />
           </div>
           <div
-            class="items-center justify-center flex-grow-0 flex-shrink-0 p-3 bg-white rounded-full shadow-lg dark:bg-gray-900">
+            class="items-center justify-center flex-grow-0 flex-shrink-0 p-4 bg-white rounded-full shadow-lg dark:bg-darkcolor-light">
             <img class="w-6" src="/public/assets/icons/instagram.png" alt="" />
           </div>
         </div>
