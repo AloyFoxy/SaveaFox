@@ -41,9 +41,9 @@ module.exports = {
         'midnight-light': '#384151',
         /* gray-700*/
         'silver': '#e2e8f0',
-        'darkcolor': '#0e0701',
-        'darkcolor-light': '#221001',
-        'foxBrown': '#361A02'
+        'darkcolor': '#0F1214',
+        'darkcolor-light': '#2d3031',
+        'foxBrown': '#4b4d4f'
       }
     },
   },
