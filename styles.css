@@ -6,13 +6,6 @@
     html {
         font-family: 'Rubik', sans-serif;
     }
-    *,
-    ::before,
-    ::after {
-      border-width: 0;
-      border-style: solid;
-      border-color: #e5e7eb;
-    }
 }
 
 @layer components{
@@ -20,27 +13,18 @@
         @apply bg-amber-500 flex items-center justify-center rounded font-medium py-2 px-6 pl-8 pr-8 text-white hover:bg-amber-400;
     }
     .btn-empty{
-        @apply bg-white flex items-center justify-center rounded font-bold py-2 px-6 pl-10 pr-10 text-midnight;
+        @apply bg-white flex items-center justify-center rounded font-bold py-2 px-6 pl-10 pr-10 text-foxBrown;
     }
     .btn-box{
-        @apply bg-transparent flex items-center justify-center rounded border-[1px] border-midnight font-medium py-2 px-6 pl-10 pr-10 text-gray-800 hover:text-amber-500 hover:border-amber-500 dark:bg-transparent dark:text-white dark:border-white dark:hover:text-amber-500 dark:hover:border-amber-500;
+        @apply bg-transparent flex items-center justify-center rounded border-[1px] border-foxBrown font-medium py-2 px-6 pl-10 pr-10 text-foxBrown hover:text-amber-500 hover:border-amber-500 dark:bg-transparent dark:text-white dark:border-white dark:hover:text-amber-500 dark:hover:border-amber-500;
     }
     .text-h2{
-        @apply text-midnight font-bold text-4xl;
+        @apply text-foxBrown font-bold text-4xl;
     }
     .text-h3{
-        @apply text-midnight font-extrabold text-3xl pb-8;
+        @apply text-foxBrown font-extrabold text-3xl pb-8;
     }
     .text-p{
         @apply text-gray-600 font-normal text-lg pb-8;
     }
 }
-
-
-
-
-/* 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color) */
-
-/*
-shadow-lg drop-shadow-lg shadow-amber-300 dark:drop-shadow-lg dark:shadow-[1px_8px_30px_-5px_rgba(248,158,11,0.35)]
-*/

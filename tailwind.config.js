@@ -16,6 +16,10 @@ module.exports = {
 
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
+
+      'desktop-lg': '1536px',
+      // => @media (min-width: 1280px) { ... }
+
     },
     extend: {
       backgroundImage: {
@@ -32,11 +36,15 @@ module.exports = {
         // 'fox-500': '#f59e0b',
         // 'fox-400': '#fbbf24',
         'metal': '#adb5bd',
-        'midnight': '#121827', /* gray-900 */
-        'midnight-light': '#384151', /* gray-700*/
+        'midnight': '#121827',
+        /* gray-900 */
+        'midnight-light': '#384151',
+        /* gray-700*/
         'silver': '#e2e8f0',
-        'darkcolor': '#020714'
-      },
+        'darkcolor': '#0e0701',
+        'darkcolor-light': '#221001',
+        'foxBrown': '#361A02'
+      }
     },
   },
   plugins: [
