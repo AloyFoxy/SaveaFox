@@ -5025,6 +5025,10 @@ textarea.form-control.is-invalid {
   width: 100%;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -5075,34 +5079,6 @@ textarea.form-control.is-invalid {
 
 .w-4 {
   width: 1rem;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-36 {
-  width: 9rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-52 {
-  width: 13rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .max-w-\[1550px\] {
@@ -5478,14 +5454,19 @@ textarea.form-control.is-invalid {
   padding: 0.25rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-10 {
@@ -5526,16 +5507,6 @@ textarea.form-control.is-invalid {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pr-8 {
@@ -5640,21 +5611,16 @@ textarea.form-control.is-invalid {
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
 .font-normal {
   font-weight: 400;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-semibold {
@@ -6169,6 +6135,10 @@ textarea.form-control.is-invalid {
     height: auto;
   }
 
+  .laptop\:w-full {
+    width: 100%;
+  }
+
   .laptop\:w-auto {
     width: auto;
   }
@@ -6183,10 +6153,6 @@ textarea.form-control.is-invalid {
 
   .laptop\:w-1\/3 {
     width: 33.333333%;
-  }
-
-  .laptop\:w-full {
-    width: 100%;
   }
 
   .laptop\:translate-x-0 {
@@ -6246,7 +6212,7 @@ textarea.form-control.is-invalid {
   }
 
   .laptop\:bg-heroImg {
-    background-image: url('../assets/img/header_web1.webp');
+    background-image: url('../assets/img/header_web.webp');
   }
 
   .laptop\:bg-\[length\:1600px\] {
@@ -6257,6 +6223,16 @@ textarea.form-control.is-invalid {
     background-position: center;
   }
 
+  .laptop\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .laptop\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .laptop\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -6265,26 +6241,6 @@ textarea.form-control.is-invalid {
   .laptop\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .laptop\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .laptop\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .laptop\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .laptop\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .laptop\:pr-16 {
@@ -6311,22 +6267,18 @@ textarea.form-control.is-invalid {
     text-align: left;
   }
 
-  .laptop\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .laptop\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 
-  .laptop\:font-extrabold {
-    font-weight: 800;
+  .laptop\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
-  .laptop\:font-medium {
-    font-weight: 500;
+  .laptop\:font-extrabold {
+    font-weight: 800;
   }
 
   .laptop\:text-foxColor {
