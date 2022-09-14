@@ -24,7 +24,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'heroImg-mobile': "url('../assets/img/header_mobile.webp')",
-        'heroImg': "url('../assets/img/header_web1.webp')",
+        'heroImg': "url('../assets/img/header_web.webp')",
       },
       dropShadow: {
         'btnDark': '1px 16px 36px 1px rgba(248,158,11,0.09)'
