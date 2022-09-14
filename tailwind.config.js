@@ -35,15 +35,10 @@ module.exports = {
         'white': '#ffffff',
         // 'fox-500': '#f59e0b',
         // 'fox-400': '#fbbf24',
-        'metal': '#adb5bd',
-        'midnight': '#121827',
-        /* gray-900 */
-        'midnight-light': '#384151',
-        /* gray-700*/
         'silver': '#e2e8f0',
         'darkcolor': '#0F1214',
         'darkcolor-light': '#2d3031',
-        'foxBrown': '#4b4d4f'
+        'foxColor': '#1d2021'
       }
     },
   },
