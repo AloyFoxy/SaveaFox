@@ -30,3 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
     nav.classList.toggle("translate-x-full");
   });
 });
+
+// Script show modal
+window.addEventListener('load', function (event) {
+  const body = document.querySelector('#body');
+  const modalElement = document.querySelector('#modal');
+
+  this.setTimeout(() => {
+
+    modalContainer.classList.add('flex');
+    modalContainer.classList.toggle('opacity-100');
+  }, 200);
+});
+
+
+// text-sm font-medium antialiased text-darkcolor dark:text-gray-400
