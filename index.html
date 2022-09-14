@@ -17,9 +17,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- <script>
+  <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia(
+        '(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
@@ -29,13 +30,13 @@
     // Whenever the user explicitly chooses dark mode
     localStorage.theme = 'dark'
     // Whenever the user explicitly chooses to respect the OS preference
-    localStorage.removeItem('theme')    
-</script> -->
+    localStorage.removeItem('theme')
+  </script>
 </head>
 
 <body id="body" class="w-screen z-10 transition-colors duration-300 bg-white dark:bg-darkcolor">
   <div id="modal" class="z-50 fixed right-0 bottom-0 pr-8 pb-4 w-fit h-fit laptop:pr-16 laptop:pb-8">
-    <a class="flex flex-col justify-center items-center px-8 py-4 gap-4 text-sm font-medium dark:text-gray-400 bg-gray-50 border-[1px] border-gray-300 dark:border-darkcolor-light rounded-lg shadow dark:bg-darkcolor hover:scale-[1.15] duration-150 subpixel-antialiased transform-gpu"
+    <a class="flex flex-col justify-center items-center px-4 py-4 gap-4 text-sm font-base laptop:text-sm laptop:py-4 laptop:px-4 dark:text-gray-400 bg-gray-50 border-[1px] border-gray-300 dark:border-darkcolor-light rounded-lg shadow dark:bg-darkcolor hover:scale-[1.15] duration-150 subpixel-antialiased transform-gpu"
       href="https://tailwindcss.com" target="_blank">
       Designed with Tailwind
       <div class="flex items-center w-full">

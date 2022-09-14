@@ -5455,11 +5455,6 @@ textarea.form-control.is-invalid {
   padding-right: 2rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -5503,6 +5498,16 @@ textarea.form-control.is-invalid {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pr-8 {
@@ -5605,6 +5610,11 @@ textarea.form-control.is-invalid {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-medium {
@@ -5920,6 +5930,11 @@ textarea.form-control.is-invalid {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-foxColor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 32 33 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -5937,11 +5952,6 @@ textarea.form-control.is-invalid {
 
 .dark .dark\:bg-gray-800\/50 {
   background-color: rgb(31 41 55 / 0.5);
-}
-
-.dark .dark\:bg-foxColor {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 32 33 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-opacity-30 {
@@ -6225,6 +6235,26 @@ textarea.form-control.is-invalid {
     padding-right: 2rem;
   }
 
+  .laptop\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .laptop\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .laptop\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .laptop\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .laptop\:pr-16 {
     padding-right: 4rem;
   }
@@ -6254,8 +6284,17 @@ textarea.form-control.is-invalid {
     line-height: 1;
   }
 
+  .laptop\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .laptop\:font-extrabold {
     font-weight: 800;
+  }
+
+  .laptop\:font-medium {
+    font-weight: 500;
   }
 
   .laptop\:text-foxColor {

@@ -55,5 +55,4 @@ module.exports = {
 /*
   npx tailwindcss -i ./styles.css -o ./public/css/styles.css --watch
   npx tailwindcss -o ./public/css/styles.css --minify
-
 */
