@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="public/js/app.js"></script>
+    <link href="public/css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="container h-full">
+    <header class="h=screen relative w-screen">
+      <nav
+        class="sticky top-0 left-0 right-0 z-10 flex h-20 items-center justify-between gap-10 bg-gray-100 pr-28 pl-28 text-base text-gray-800 shadow-md dark:bg-gray-900 dark:text-gray-500"
+      >
+        <a href="">
+          <p class="text-3xl font-black text-amber-500">SAVE THE FOXES</p>
+        </a>
+        <!-- <a href="" class="w-24">
+        <img id="theme-toggle-light-logo" class="" src="public/assets/img/logo.png"/>
+        <img id="theme-toggle-dark-logo" class="hidden" src="public/assets/img/logo_white.png"/>
+      </a> -->
+        <div class="flex">
+          <ul class="mr-10 flex flex-row items-center gap-10 font-medium">
+            <li class="cursor-pointer hover:text-amber-500">Home</li>
+            <li class="cursor-pointer hover:text-amber-500">About</li>
+            <li class="cursor-pointer hover:text-amber-500">Our team</li>
+            <li class="cursor-pointer hover:text-amber-500">Sponsors</li>
+            <li class="cursor-pointer hover:text-amber-500">Projects</li>
+            <li class="cursor-pointer hover:text-amber-500">Donate</li>
+            <li class="cursor-pointer hover:text-amber-500">Shop</li>
+            <a class="btn-fill" href="">Contact</a>
+            <div class="flex">
+              <button
+                type="button"
+                id="theme-toggle"
+                class="flex items-center justify-center rounded bg-slate-200 py-2 px-6 pl-6 pr-6 dark:bg-slate-800"
+              >
+                <i
+                  id="theme-toggle-dark-icon"
+                  class="fa-solid fa-moon text-2xl text-gray-800 before:hidden dark:text-gray-200"
+                ></i>
+                <i
+                  id="theme-toggle-light-icon"
+                  class="fa-solid fa-sun text-2xl text-gray-800 before:hidden dark:text-amber-500"
+                ></i>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <div
+        class="flex h-8 w-full items-center justify-center bg-gray-300 pt-5 pb-5 font-medium text-white dark:bg-slate-900 dark:text-white"
+      >
+        <p>
+          The tour season is sold out for 2022. Wait until the next one.
+          <a href="" class="text-amber-500 underline">More info</a>
+        </p>
+      </div>
+      <section
+        class="relative z-0 flex bg-gray-100 bg-[url('public/assets/img/header_web.png')] bg-cover bg-center pr-28 pl-28 pt-32 pb-56 dark:bg-neutral-900"
+      >
+        <div class="flex w-2/4 flex-col">
+          <h1
+            class="pb-10 text-7xl font-extrabold text-gray-900 dark:text-gray-50"
+          >
+            You Can Help to <br /><span class="text-amber-500">Save a Fox</span>
+          </h1>
+          <p class="w-5/6 text-xl font-normal text-gray-800 dark:text-gray-50">
+            We are dedicated to save foxes in danger to take them to our refuge
+            and take care of them to avoid endangering the species.
+          </p>
+          <div
+            class="flex w-96 flex-row justify-between pt-5 pb-5 text-amber-600"
+          >
+            <button class="btn-fill">Donate</button>
+            <button class="btn-box">Join Our Team</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section
+      class="h-400 flex w-screen flex-col pr-28 pl-28 pt-32 pb-56 dark:bg-slate-900"
+    >
+      <h1 class="text-h2 text-center dark:text-white">What is Save a Fox?</h1>
+      <div class="flex justify-between">
+        <div class="mr-20 w-1/2 flex-col">
+          <h2 class="text-h3 font-extrabold text-slate-900 dark:text-white">
+            We rescue foxes from fur farms
+          </h2>
+          <p class="mb-10 text-xl font-normal text-gray-800 dark:text-white">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            recusandae fugiat in ipsam dolor corrupti, voluptas iste magnam
+            quidem corporis saepe, nulla culpa architecto natus accusamus
+            sapiente esse ratione tempore illo excepturi nostrum nam expedita
+            soluta. Necessitatibus dolores mollitia, sunt blanditiis quis animi,
+            unde expedita ullam porro doloremque dolorem quibusdam.
+          </p>
+        </div>
+        <div class="w-1-2">
+          <!-- <iframe class="rounded-xl" width="560" height="315" src="https://www.youtube.com/embed/QN9BptZM22g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+      </div>
+    </section>
+    <!-- component -->
+    <section class="mx-auto w-screen pr-28 pl-28 pb-56">
+      <div class="">
+        <h2 class="text-h2 text-center dark:text-white">
+          A tour around the rescue!
+        </h2>
+      </div>
+      <div>
+        <div class="flex flex-row">
+          <div class="md:flex hidden flex-col items-center">
+            <div
+              class="mr-4 flex w-32 flex-col items-center justify-center rounded-xl border border-slate-900 py-5 uppercase"
+            >
+              <div class="text-xl font-black text-gray-900">Prepare</div>
+              <div class="text-base font-medium text-slate-900"></div>
+            </div>
+            <div class="h-full border-l-4 border-transparent">
+              <div
+                class="mr-4 h-full border-l-2 border-solid border-slate-900"
+              ></div>
+            </div>
+          </div>
+          <div class="flex-auto rounded-xl border border-slate-900">
+            <div class="md:flex-row flex flex-col items-center">
+              <div class="flex-auto">
+                <div
+                  class="md:hidden pt-3 pl-3 text-sm font-normal uppercase text-slate-900"
+                >
+                  <span class="font-black">Step 1</span>
+                </div>
+                <div class="p-3 text-3xl font-semibold text-slate-900">
+                  We prepare for the foxes
+                </div>
+                <div class="px-3 pb-6">
+                  We prepare for fox pups by having all supplies such as
+                  formula, feeding syringes, nipples, and blankets. When
+                  rescuing foxes over 7 weeks old, we need large spaces and vet
+                  appointments ready.
+                </div>
+              </div>
+              <div class="md:w-[45rem] w-full p-5">
+                <img
+                  src="public/assets/img/fur-farm-3.webp"
+                  alt="step 1"
+                  class="rounded-xl object-scale-down"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row items-start">
+          <div class="border-t-2 border-r-2 border-transparent">
+            <div
+              class="ml-16 h-16 w-16 rounded-bl-full border-l-2 border-b-2 border-solid border-slate-900"
+            ></div>
+          </div>
+          <div class="flex-auto border-t-4 border-transparent">
+            <div class="h-16 border-b-2 border-solid border-gray-900"></div>
+          </div>
+          <div
+            class="mt-16 mr-16 h-16 w-16 rounded-tr-full border-r-2 border-t-2 border-solid border-gray-900"
+          ></div>
+        </div>
+        <div class="flex flex-row-reverse">
+          <div class="md:flex hidden flex-col items-center">
+            <div
+              class="ml-4 flex w-32 flex-col items-center justify-center rounded-xl border border-gray-900 py-5 uppercase"
+            >
+              <div class="text-xl font-black text-gray-900">Rescue</div>
+              <div class="text-base font-medium text-slate-900"></div>
+            </div>
+            <div class="h-full border-r-4 border-transparent">
+              <div
+                class="ml-4 h-full border-l-4 border-solid border-gray-900"
+              ></div>
+            </div>
+          </div>
+          <div class="flex-auto rounded-xl border border-gray-900">
+            <div class="md:flex-row flex flex-col items-center">
+              <div class="flex-auto">
+                <div
+                  class="md:hidden pt-3 pl-3 text-sm font-normal uppercase text-gray-900"
+                >
+                  <span class="font-black">Step 2</span>
+                </div>
+                <div class="p-3 text-3xl font-semibold text-slate-900">
+                  We rescue foxes from anywhere
+                </div>
+                <div class="px-3 pb-6">
+                  We rescue foxes from many different situations. We rescue
+                  sick, injured, and orphaned foxes from furfarms. Ones that the
+                  farmers believe would not make it. We take in surrendered
+                  foxes that were once pets and originally came from breeders.
+                  We also take in and rescue found pet foxes.
+                </div>
+              </div>
+              <div class="md:w-[45rem] w-full p-5">
+                <img
+                  src="public/assets/img/foxes_rescued.jpg"
+                  alt="step 2"
+                  class="rounded-xl object-scale-down"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row-reverse items-start">
+          <div class="border-t-4 border-l-4 border-transparent">
+            <div
+              class="mr-16 h-16 w-16 rounded-br-full border-r-4 border-b-4 border-solid border-gray-900"
+            ></div>
+          </div>
+          <div class="flex-auto border-t-4 border-transparent">
+            <div class="h-16 border-b-4 border-solid border-gray-900"></div>
+          </div>
+          <div
+            class="mt-16 ml-16 h-16 w-16 rounded-tl-full border-l-4 border-t-4 border-solid border-gray-900"
+          ></div>
+        </div>
+        <div class="flex flex-row">
+          <div class="md:flex hidden flex-col items-center">
+            <div
+              class="mr-4 flex w-32 flex-col items-center justify-center rounded-xl border border-gray-900 py-5 uppercase"
+            >
+              <div class="text-3xl font-black text-gray-900">Step 3</div>
+              <div class="text-sm text-gray-900">Planification</div>
+            </div>
+            <div class="h-full border-l-4 border-transparent">
+              <div
+                class="mr-4 h-full border-l-4 border-solid border-gray-900"
+              ></div>
+            </div>
+          </div>
+          <div class="flex-auto rounded-xl border border-gray-900">
+            <div class="md:flex-row flex flex-col items-center">
+              <div class="flex-auto">
+                <div
+                  class="md:hidden pt-3 pl-3 text-sm font-normal uppercase text-gray-900"
+                >
+                  <span class="font-black">Step 3</span> - Planification
+                </div>
+                <div class="font p-3 text-3xl text-gray-800">
+                  Make a good plan and prepare tasks
+                </div>
+                <div class="px-3 pb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam facilis, voluptates error alias dolorem praesentium
+                  sit soluta iure incidunt labore explicabo eaque, quia
+                  architecto veritatis dolores, enim consequatur nihil ipsum.
+                </div>
+              </div>
+              <div class="md:w-96 w-full p-5">
+                <img src="" alt="step 3" class="object-scale-down" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row items-start">
+          <div class="border-t-4 border-r-4 border-transparent">
+            <div
+              class="ml-16 h-16 w-16 rounded-bl-full border-l-4 border-b-4 border-solid border-gray-900"
+            ></div>
+          </div>
+          <div class="flex-auto border-t-4 border-transparent">
+            <div class="h-16 border-b-4 border-solid border-gray-900"></div>
+          </div>
+          <div
+            class="mt-16 mr-16 h-16 w-16 rounded-tr-full border-r-4 border-t-4 border-solid border-gray-900"
+          ></div>
+        </div>
+        <div class="flex flex-row-reverse">
+          <div class="md:flex hidden flex-col items-center">
+            <div
+              class="ml-4 flex w-32 flex-col items-center justify-center rounded-xl border border-gray-900 py-5 uppercase"
+            >
+              <div class="text-3xl font-black text-gray-900">Step 4</div>
+              <div class="text-sm text-gray-900">Implementation</div>
+            </div>
+          </div>
+          <div class="flex-auto rounded-xl border border-gray-900">
+            <div class="md:flex-row flex flex-col items-center">
+              <div class="flex-auto">
+                <div
+                  class="md:hidden pt-3 pl-3 text-sm font-normal uppercase text-gray-900"
+                >
+                  <span class="font-black">Step 4</span> - Implementation
+                </div>
+                <div class="font p-3 text-3xl text-gray-800">
+                  Execute, impletement your solution
+                </div>
+                <div class="px-3 pb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam facilis, voluptates error alias dolorem praesentium
+                  sit soluta iure incidunt labore explicabo eaque, quia
+                  architecto veritatis dolores, enim consequatur nihil ipsum.
+                </div>
+              </div>
+              <div class="md:w-96 w-full p-5">
+                <img src="" alt="step 4" class="object-scale-down" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="public/js/app.js"></script>
+    <!-- <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+  <script src="/node_modules/tw-elements/dist/js/index.min.js"></script> -->
+  </body>
+</html>
