@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html {
+        font-family: 'Rubik', sans-serif;
+    }
+}
+
+@layer components{
+    .btn-fill{
+        @apply bg-amber-500 flex items-center justify-center rounded font-medium py-2 px-4 text-center text-white hover:bg-amber-400;
+    }
+    .btn-empty{
+        @apply bg-white flex items-center justify-center rounded font-bold py-2 px-6 pl-10 pr-10 text-foxColor;
+    }
+    .btn-box{
+        @apply bg-transparent flex items-center justify-center rounded border-[1px] border-foxColor font-medium py-2 px-6 pl-10 pr-10 text-foxColor hover:text-amber-500 hover:border-amber-500 dark:bg-transparent dark:text-white dark:border-white dark:hover:text-amber-500 dark:hover:border-amber-500;
+    }
+    .text-h2{
+        @apply text-foxColor font-bold text-4xl;
+    }
+    .text-h3{
+        @apply text-foxColor font-extrabold text-3xl pb-8;
+    }
+    .text-p{
+        @apply text-gray-600 font-normal text-lg pb-8;
+    }
+}

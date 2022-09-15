@@ -1,0 +1,20 @@
+{
+  "name": "saveafox",
+  "version": "1.0.0",
+  "description": "A little web project for learn Tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Federico Puoy",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "flowbite": "^1.4.5",
+    "tailwind-hamburgers": "^1.2.2",
+    "tw-elements": "^1.0.0-alpha12"
+  }
+}
