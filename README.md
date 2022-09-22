@@ -54,7 +54,7 @@ Credits to the owners of the images used in this project.
 ## License
 
 GNU General Public License v3.0
-
+ 
 ---
 ## Contact
 
