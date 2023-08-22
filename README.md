@@ -58,5 +58,5 @@ GNU General Public License v3.0
 ---
 ## Contact
 
-> GitHub [@aloydevel](https://github.com/AloyDevel) &nbsp;&middot;&nbsp;
-> Twitter [@aloydevel](https://twitter.com/aloydevel)
+> GitHub [@aloydevel](https://github.com/FreddyPuoy) &nbsp;&middot;&nbsp;
+> Twitter [@aloydevel](https://twitter.com/freddypuoy)
