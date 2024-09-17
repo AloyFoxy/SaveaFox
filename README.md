@@ -58,5 +58,5 @@ GNU General Public License v3.0
 ---
 ## Contact
 
-> GitHub [@AloyFoxy # Reemplaza el @usuario viejo](https://github.com/AloyFoxy) &nbsp;&middot;&nbsp;
-> Twitter [@AloyFoxy # Reemplaza el @usuario viejo](https://twitter.com/AloyFoxy # Reemplaza el @usuario viejo)
+> GitHub [@AloyFoxy](https://github.com/AloyFoxy) &nbsp;&middot;&nbsp;
+> Twitter [@AloyFoxy](https://x.com/AloyFoxy)
