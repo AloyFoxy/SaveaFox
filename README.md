@@ -58,5 +58,5 @@ GNU General Public License v3.0
 ---
 ## Contact
 
-> GitHub [@freddypuoy](https://github.com/FreddyPuoy) &nbsp;&middot;&nbsp;
-> Twitter [@freddypuoy](https://twitter.com/freddypuoy)
+> GitHub [@AloyFoxy](https://github.com/AloyFoxy) &nbsp;&middot;&nbsp;
+> Twitter [@AloyFoxy](https://x.com/AloyFoxy)
